@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Chucky</string>
+    <string name="click_below_to_have_a_chucky_joke">Click below to have a Chucky Joke !</string>
+    <string name="one_more_joke">One more Joke !</string>
 </resources>
