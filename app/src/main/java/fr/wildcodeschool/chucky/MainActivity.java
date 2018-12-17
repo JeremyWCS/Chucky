@@ -1,5 +1,6 @@
 package fr.wildcodeschool.chucky;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -25,6 +26,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Button btCat = findViewById(R.id.bt_cat);
+        btCat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToList = new Intent(MainActivity.this, RecyclerViewActivity.class);
+                startActivity(goToList);
+            }
+        });
 
         Button button = findViewById(R.id.bt_refresh);
         button.setOnClickListener(new View.OnClickListener() {
